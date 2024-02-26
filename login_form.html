@@ -1,0 +1,155 @@
+<html>
+    <head> 
+        <meta name="viewport" content="width=device-width, initian-scale=1.0">
+        <title>Login Page</title>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background: url("https://i.pinimg.com/564x/9b/72/e0/9b72e0d69aec4ccc2756db1616754d63.jpg");
+        background-size: cover;
+        background-position: center;
+        font-family: sans-serif;
+    }
+    #img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 1.7cm;
+        z-index:1;
+        
+    }
+    #box{
+    padding: 27px 65px;
+        height: 9cm;
+        width: 7cm;
+        background-color: rgb(9, 32, 41);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 0.8cm;
+    }
+    #form{
+       
+        color: whitesmoke;
+        font-size: 20px;
+        position: relative;
+        top: 40px;
+        left: 4px;
+       
+    }
+    #h{
+        font-size: 23px;
+        color: whitesmoke;
+        text-align: center;
+        position: relative;
+        top: 17px;
+    }
+    /* #pass{
+        font-size: 15px;
+        color: darkgray;
+        text-decoration: none;
+        font-size: 12px;
+        /* color: darkgray; */
+        /* line-height: 20px; */
+
+    /* } */ 
+    #box p{
+        margin:0;
+        padding: 0;
+        font-weight: bold;
+    }
+    #box input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #box input[type="text"], input[type="password"]
+    {
+        border: none;
+        border-bottom: 1px solid white;
+        background: transparent;
+        outline: none;
+        height: 30px;
+        color: whitesmoke;
+        font-size: 15px;
+    }
+    #box input[type="submit"]
+    {
+        background: rgb(94, 19, 175);
+        border: none;
+        outline: none;
+        color: whitesmoke;
+        height:30px ;
+        font-size: 18px;
+        border-radius: 30px;
+        
+
+    }
+    #box input[type="submit"]:hover
+    {
+        cursor: pointer;
+        background-color: blanchedalmond;
+        color: #000;
+    }
+    #box a{
+        text-decoration: none;
+        font-size: 12px;
+        color: darkgray;
+        line-height: 20px; 
+
+    }
+    #box a:hover
+    {
+        color: rgb(180, 41, 41);
+
+    }
+
+    @media screen and (max-width: 600px){
+        #box{
+        position: relative;
+        bottom: 40px;
+      }
+    }
+    
+</style>
+    </head>
+    <body>
+<img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtF3o2PvqxOMHgdrpj_YRItsLBjxyTeNZu_Q&usqp=CAU">
+      <div id="box">
+        
+            <h1 id="h">Log in Here</h1>
+            <form id="form">
+             <p>Username</p>
+             <input type="text" placeholder="Enter the username">
+             <p>Password</p>
+             <input id="password" type="text" placeholder="Enter the Password">
+             <input id="sub" type="submit" value="Log in">
+          <div id="pass">
+            <a href="">Forgot your password?</a> <br>
+             <a href="">Don't have account?</a><br>
+          </div>   
+            </form>
+          
+        </form>
+        
+
+      </div>
+      <script>
+        let  p=0;
+        let pa="rahull";
+        document.getElementById("sub").onclick=function(){
+       p= document.getElementById("password").value;
+          if(p!=pa){
+            alert("Wrong Password")
+          }
+       }
+      </script>
+    </body>
+</html>
+
+
